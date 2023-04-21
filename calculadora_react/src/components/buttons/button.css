@@ -1,0 +1,19 @@
+button{
+    height: 57px;
+    width: 55px;  
+
+    background: #fff;
+
+    border: none;
+    border-radius: 7px;
+
+    margin: 0 3px;
+
+    font-size: 21px;
+    color: rgb(0, 0, 0);
+
+    outline: none;
+    
+    cursor: pointer;
+    transition: all 0.3s;
+}
