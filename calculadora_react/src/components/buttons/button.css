@@ -1,4 +1,6 @@
 button{
+    position: relative;
+
     height: 57px;
     width: 55px;  
 
@@ -7,13 +9,22 @@ button{
     border: none;
     border-radius: 7px;
 
-    margin: 0 3px;
+    margin: 5px 3px;
 
-    font-size: 21px;
+    font-size: 1.25rem;
     color: rgb(0, 0, 0);
 
     outline: none;
     
     cursor: pointer;
     transition: all 0.3s;
+}
+
+button >img {
+    height: 30px;
+    width: 25px;
+
+    position: relative;
+    top: 9px;
+    margin-top: -14px;
 }
