@@ -27,21 +27,22 @@ function Index(){
     }
 
     const elementoPai = document.querySelector(".historico-de-resultado")
-    const resultadosFilho = document.querySelectorAll(".calculos")
+    const elementosFilhosCriados = document.querySelectorAll(".calculos")
+    
+    const historicoDeResultados = (resultado) => {
+         containerRef.current.insertAdjacentHTML("beforeend", `<span class="calculos">${resultado}</span>`)
+ 
+         elementoPai.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}) //add o scroll automático no historico.
+     }
 
     const handleClean = (clean) => {
         setDisplay(clean)
         
-        resultadosFilho.forEach((elemento) => { //Excluir todos elemento criados do historico.
+        elementosFilhosCriados.forEach((elemento) => { //Excluir todos elemento criados do historico.
             elemento.remove()
         })  
     }
 
-   const historicoDeResultados = (resultado) => {
-        containerRef.current.insertAdjacentHTML("beforeend", `<span class="calculos">${resultado}</span>`)
-
-        elementoPai.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}) //add o scroll automático no historico.
-    }
 
     const handleResultado = (display) => {
         const resultado = eval(display).toString()
@@ -51,7 +52,6 @@ function Index(){
     }
    
     // toggle-mode
-    
         const html = document.querySelector('html')
 
         const checkbox = (offOn) => {
@@ -62,7 +62,7 @@ function Index(){
                 })
              }else {
                 addEventListener('change', () => {
-                    html.classList.toggle('')
+                    html.classList.toggle(false)
                 })
              }
         }
@@ -116,7 +116,7 @@ function Index(){
                         <Buttons label = '0' onClick={() => handleAddNumero('0')} /> 
                         <Buttons label = '=' onClick={() => handleResultado(display)} /> 
                     </div>
-                    {/* linha horizontal */}
+                    {/*coluna horizontal */}
                     <div className="row6">
                         <Buttons label = '+' onClick={() => handleAddOperador('+')} /> 
                     </div>
