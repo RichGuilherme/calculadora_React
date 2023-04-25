@@ -1,4 +1,4 @@
-import { useState, useRef, useLayoutEffect } from "react"
+import { useState, useRef } from "react"
 import Buttons from "../../components/buttons/button"
 import iconExcluir from '../../assets/icons-limpar-símbolo.png'
 import './index.css'

@@ -34,11 +34,9 @@
 .page{
     height: 100vh;
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: var(--background-fundo);
 }
 
@@ -50,17 +48,12 @@
 }
 .toggle-mode > label {
     display: block;
-
     position: relative;
     height: 24px;
     width: 48px;
-
     background-color: #f7f7f7;
-
     border: 1px var(--tecla-op-background) solid;
-
     border-radius: 100px;
-     
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -69,17 +62,12 @@
     position: absolute;
     left: 1px;
     top: 1px;
-
     display: block;
-
     width: 20px;
     height: 20px;
     border-radius: 100px;
-
     background: #131d26;
-
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.171);
-
     transition: all 0.3s ease;
 }
 .toggle-mode > label:active:after {
@@ -87,7 +75,6 @@
 }
 .toggle-mode > input:checked ~ label {
     background-color: #111;
-
     border-color: var(--tecla-op-color);
 }
 .toggle-mode > input:checked ~ label:after {
@@ -96,7 +83,6 @@
 }
 .toggle-mode > input:disabled ~ label {
     background-color: #d5d5d5;
-
     pointer-events: none;
 }
 .toggle-mode > input:disabled ~ label:after {
@@ -109,43 +95,33 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
     height: 490px;
     padding: 15px 17px 15px 17px;
-
     background-color: var(--theme-dark-cal-background);
-    
     border-radius: 25px;
 }
 
 .visor{
     position: relative;
- 
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
     justify-content: center;
-
     height: 111px;
     width: 244px;
-
     margin-bottom: 10px;
 }
 .visor > input{
     position: absolute;
     bottom: 0;
     left: 0;
- 
     height: 40px;
     width: 100%;
- 
     font-size: 2rem;
     text-align: right;
     padding-top: 10px;
-
     color: var(--display-color);
     background-color: rgba(238, 238, 238, 0);
-
     border: none;
     outline: none;
 }
@@ -153,19 +129,14 @@
 
 .historico-de-resultado{
     position: absolute;
-
     bottom: 41px;
-
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
     max-height: 70px;
-
     overflow-y: auto;
     scroll-behavior: smooth;
     scroll-margin-bottom: 200px;
-    
     color: var(--historico-color);
     font-size: 0.95rem;
     letter-spacing: 1px;
@@ -189,9 +160,7 @@
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-
     padding: 13px 0;
-
     height: 350px;
     width: 244px;
 }
@@ -231,7 +200,6 @@
 .row5{ grid-area: 5 / 1 / 6 / 5; }
 .row5 button:last-child{
     width: 115px;
-
     color: var(--tecla-resultado-color);
     background-color: var(--tecla-resultado-background);
 }
@@ -239,7 +207,6 @@
 .row6 { grid-area: 4 / 4 / 6 / 5; }
 .row6 button{
    height: 122px;
-
    color: var(--tecla-op-color);
    background-color: var(--tecla-op-background);
 }
