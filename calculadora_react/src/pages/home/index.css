@@ -143,6 +143,7 @@
 }
 
 /* Chrome, edge, Safari e opera */
+
 .historico-de-resultado::-webkit-scrollbar{
     width: 2px;
 }
