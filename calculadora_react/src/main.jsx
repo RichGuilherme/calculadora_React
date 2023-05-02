@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Index from './pages/home/index'
+import Index from './pages/home/'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
